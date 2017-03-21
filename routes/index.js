@@ -1,24 +1,33 @@
 var express = require('express');
 var router = express.Router();
-var Buttons = require('../uiComponents/buttons');
-var Cards = require('../uiComponents/cards');
-var Collections = require('../uiComponents/collections');
-
+const queries = require('../db/queries');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('Hello from over here');
+  res.send('Hello from the other side');
 });
 
 router.get('/materialize/buttons', (req, res) => {
-    res.json(Buttons);
+    queries.getButtons()
+      .then((data) => {
+        res.json(data);
+      })
 })
 
 router.get('/materialize/cards', (req,res) => {
-  res.json(Cards);
+  queries.getCards()
+    .then(data => {
+      res.json(data);
+    })
 })
 
 router.get('/materialize/collections', (req,res) => {
   res.json(Collections);
+})
+router.get('/materialize/components', (req, res) =>{
+  queries.getAllComponents()
+    .then(data => {
+      res.json(data);
+    });
 })
 
 module.exports = router;
