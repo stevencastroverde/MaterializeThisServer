@@ -1,4 +1,4 @@
-module.exports = [
+const collections = [
   {
     displayName: 'Basic',
     category: 'Collections',

@@ -1,4 +1,4 @@
-module.exports = [
+const navbars = [
   {
     displayName: 'Right Aligned Links',
     category: 'Navbar',

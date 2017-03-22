@@ -1,4 +1,4 @@
-module.exports = [
+const buttons = [
   {
     displayName: 'Raised',
     category: 'Buttons',
