@@ -40,6 +40,7 @@ const buttons = [
     displayName: 'Click-only FAB',
     category: 'Buttons',
     template: '/buttons/clickOnlyFab.html',
+    thumbnail: '',
     html: ''
   },
   {
