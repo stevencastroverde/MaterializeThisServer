@@ -22,5 +22,5 @@ module.exports = [
     category: 'Badges',
     template: '/badges/badgesCollapsibles.html',
     html: ''
-  },
+  }
 ];
