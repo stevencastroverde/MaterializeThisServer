@@ -1,35 +1,64 @@
-var buttons = [
+
+const buttons = [
   {
     displayName: 'Raised',
     category: 'Buttons',
-    html: '<a class="waves-effect waves-light btn">button</a>',
-    iconLeft: '<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>',
-    iconRight: '<a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>'
+    template: '/buttons/raisedButton.html',
+    html: ''
   },
-    {
-			displayName: 'Floating',
-			category: 'Buttons',
-			html:'<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>'
-	},
-    {
-			displayName: 'Flat',
-			category: 'Buttons',
-			html: '<a class="waves-effect waves-teal btn-flat">Button</a>'
-	},
-    {
-			displayName: 'Submit',
-			category: 'Buttons',
-			html:'<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>'
-	}
-    // {large: {
-    //     normal: "<a class='waves-effect waves-light btn-large'>Button</a>",
-    //     iconLeft: "<a class='waves-effect waves-light btn-large'><i class='material-icons left'>cloud</i>button</a>",
-    //     iconRight: "<a class='waves-effect waves-light btn-large'><i class='material-icons right'>cloud</i>button</a>"
-    // },
-
-
-
+  {
+    displayName: 'Left Icon',
+    category: 'Buttons',
+    template: '/buttons/leftIcon.html',
+    html: ''
+  },
+  {
+    displayName: 'Right Icon',
+    category: 'Buttons',
+    template: '/buttons/rightIcon.html',
+    html: ''
+  },
+  {
+    displayName:'Floating Button',
+    category: 'Buttons',
+    template: '/buttons/floatingButton.html',
+    html:''
+  },
+  {
+    displayName: 'Fixed Action Button',
+    category: 'Buttons',
+    template: '/buttons/fabButton.html',
+    html: ''
+  },
+  {
+    displayName: 'Horizontal FAB',
+    category: 'Buttons',
+    template: '/buttons/horizontalFab.html',
+    html: ''
+  },
+  {
+    displayName: 'Click-only FAB',
+    category: 'Buttons',
+    template: '/buttons/clickOnlyFab.html',
+    html: ''
+  },
+  {
+    displayName: 'FAB to Toolbar',
+    category: 'Buttons',
+    template: '/buttons/fabToolbar.html',
+    html: ''
+  },
+  {
+    displayName: 'Flat',
+    category: 'Buttons',
+    template: '/buttons/flatButton.html',
+    html: ''
+  },
+  {
+    displayName: 'Submit Button',
+    category: 'Buttons',
+    template: '/buttons/submitButton.html',
+    html:''
+  },
 
 ];
-
-module.exports = buttons
